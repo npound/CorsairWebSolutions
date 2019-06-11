@@ -1,0 +1,2071 @@
+[19:41:25 Error] Microsoft.AspNetCore.Server.Kestrel
+Connection id "0HLN98OK1VN1K", Request id "0HLN98OK1VN1K:00000001": An unhandled exception was thrown by the application.
+System.InvalidOperationException: At least one asymmetric signing key must be registered when enabling the implicit flow.
+Consider registering a certificate using 'services.AddOpenIddict().AddServer().AddSigningCertificate()' or 'services.AddOpenIddict().AddServer().AddDevelopmentSigningCertificate()' or call 'services.AddOpenIddict().AddServer().AddEphemeralSigningKey()' to use an ephemeral key.
+   at OpenIddict.Server.Internal.OpenIddictServerConfiguration.PostConfigure(String name, OpenIddictServerOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass10_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+
+[20:01:54 Error] Microsoft.AspNetCore.Server.Kestrel
+Connection id "0HLN9942CIIF9", Request id "0HLN9942CIIF9:00000001": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The asymmetric signing key doesn't contain the required private key.
+   at Microsoft.Extensions.DependencyInjection.OpenIdConnectServerExtensions.AddKey(IList`1 credentials, SecurityKey key)
+   at Microsoft.Extensions.DependencyInjection.OpenIddictServerBuilder.<>c__DisplayClass21_0.<AddSigningKey>b__0(OpenIddictServerOptions options)
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass10_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+
+[20:02:04 Error] Microsoft.AspNetCore.Server.Kestrel
+Connection id "0HLN9942CIIF8", Request id "0HLN9942CIIF8:00000002": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The asymmetric signing key doesn't contain the required private key.
+   at Microsoft.Extensions.DependencyInjection.OpenIdConnectServerExtensions.AddKey(IList`1 credentials, SecurityKey key)
+   at Microsoft.Extensions.DependencyInjection.OpenIddictServerBuilder.<>c__DisplayClass21_0.<AddSigningKey>b__0(OpenIddictServerOptions options)
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass10_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+
+[20:02:05 Error] Microsoft.AspNetCore.Server.Kestrel
+Connection id "0HLN9942CIIF9", Request id "0HLN9942CIIF9:00000002": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The asymmetric signing key doesn't contain the required private key.
+   at Microsoft.Extensions.DependencyInjection.OpenIdConnectServerExtensions.AddKey(IList`1 credentials, SecurityKey key)
+   at Microsoft.Extensions.DependencyInjection.OpenIddictServerBuilder.<>c__DisplayClass21_0.<AddSigningKey>b__0(OpenIddictServerOptions options)
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass10_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+
+[20:02:05 Error] Microsoft.AspNetCore.Server.Kestrel
+Connection id "0HLN9942CIIF8", Request id "0HLN9942CIIF8:00000003": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The asymmetric signing key doesn't contain the required private key.
+   at Microsoft.Extensions.DependencyInjection.OpenIdConnectServerExtensions.AddKey(IList`1 credentials, SecurityKey key)
+   at Microsoft.Extensions.DependencyInjection.OpenIddictServerBuilder.<>c__DisplayClass21_0.<AddSigningKey>b__0(OpenIddictServerOptions options)
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c__DisplayClass10_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+
+[20:03:38 Warning] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware
+Failed to determine the https port for redirect.
+
+[20:04:34 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration request was successfully extracted from the HTTP request: {}.
+
+[20:04:34 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration request was successfully validated.
+
+[20:04:34 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration response was successfully returned: {
+  "issuer": "http://localhost:9220/",
+  "authorization_endpoint": "http://localhost:9220/connect/authorize",
+  "token_endpoint": "http://localhost:9220/connect/token",
+  "jwks_uri": "http://localhost:9220/.well-known/jwks",
+  "grant_types_supported": [
+    "password",
+    "implicit",
+    "authorization_code"
+  ],
+  "response_types_supported": [
+    "token",
+    "code",
+    "code token",
+    "id_token",
+    "id_token token",
+    "code id_token",
+    "code id_token token"
+  ],
+  "response_modes_supported": [
+    "form_post",
+    "fragment",
+    "query"
+  ],
+  "scopes_supported": [
+    "openid"
+  ],
+  "claims_supported": [
+    "aud",
+    "exp",
+    "iat",
+    "iss",
+    "jti",
+    "sub"
+  ],
+  "id_token_signing_alg_values_supported": [
+    "RS256"
+  ],
+  "code_challenge_methods_supported": [
+    "S256"
+  ],
+  "subject_types_supported": [
+    "public"
+  ],
+  "token_endpoint_auth_methods_supported": [
+    "client_secret_basic",
+    "client_secret_post"
+  ],
+  "claims_parameter_supported": false,
+  "request_parameter_supported": false,
+  "request_uri_parameter_supported": false
+}.
+
+[20:04:34 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "25a90a0da995427b93c0be98a50a4689",
+  "nonce": "970aa9595f1549bcb5083b86efd8b3d8"
+}.
+
+[20:04:34 Error] OpenIddict.Server.Internal.OpenIddictServerProvider
+The authentication request was rejected because invalid scopes were specified: ["profile","corsairwebsolution_client"].
+
+[20:04:34 Error] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was rejected with the following error: invalid_scope ; The specified 'scope' parameter is not valid.
+
+[20:04:34 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization response was successfully returned as a plain-text document: {
+  "error": "invalid_scope",
+  "error_description": "The specified 'scope' parameter is not valid."
+}.
+
+[20:08:11 Warning] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware
+Failed to determine the https port for redirect.
+
+[20:08:32 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration request was successfully extracted from the HTTP request: {}.
+
+[20:08:32 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration request was successfully validated.
+
+[20:08:32 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration response was successfully returned: {
+  "issuer": "http://localhost:9220/",
+  "authorization_endpoint": "http://localhost:9220/connect/authorize",
+  "token_endpoint": "http://localhost:9220/connect/token",
+  "jwks_uri": "http://localhost:9220/.well-known/jwks",
+  "grant_types_supported": [
+    "password",
+    "implicit",
+    "authorization_code"
+  ],
+  "response_types_supported": [
+    "token",
+    "code",
+    "code token",
+    "id_token",
+    "id_token token",
+    "code id_token",
+    "code id_token token"
+  ],
+  "response_modes_supported": [
+    "form_post",
+    "fragment",
+    "query"
+  ],
+  "scopes_supported": [
+    "openid",
+    "profile",
+    "email",
+    "corsairwebsolution_client"
+  ],
+  "claims_supported": [
+    "aud",
+    "exp",
+    "iat",
+    "iss",
+    "jti",
+    "sub"
+  ],
+  "id_token_signing_alg_values_supported": [
+    "RS256"
+  ],
+  "code_challenge_methods_supported": [
+    "S256"
+  ],
+  "subject_types_supported": [
+    "public"
+  ],
+  "token_endpoint_auth_methods_supported": [
+    "client_secret_basic",
+    "client_secret_post"
+  ],
+  "claims_parameter_supported": false,
+  "request_parameter_supported": false,
+  "request_uri_parameter_supported": false
+}.
+
+[20:08:32 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "d63854f28dde4d87849bdce87c4f30bc",
+  "nonce": "7ac743c347844ebbbda030e6409ad647"
+}.
+
+[20:08:32 Error] OpenIddict.Server.Internal.OpenIddictServerProvider
+The authorization request was rejected because the application 'corsairwebsolutions' was not allowed to use the authorization endpoint.
+
+[20:08:32 Error] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was rejected with the following error: unauthorized_client ; This client application is not allowed to use the authorization endpoint.
+
+[20:08:32 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization response was successfully returned as a plain-text document: {
+  "error": "unauthorized_client",
+  "error_description": "This client application is not allowed to use the authorization endpoint."
+}.
+
+[20:21:08 Warning] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware
+Failed to determine the https port for redirect.
+
+[20:21:33 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "d63854f28dde4d87849bdce87c4f30bc",
+  "nonce": "7ac743c347844ebbbda030e6409ad647"
+}.
+
+[20:21:33 Error] OpenIddict.Server.Internal.OpenIddictServerProvider
+The authorization request was rejected because the application 'corsairwebsolutions' was not allowed to use the authorization endpoint.
+
+[20:21:33 Error] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was rejected with the following error: unauthorized_client ; This client application is not allowed to use the authorization endpoint.
+
+[20:21:33 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization response was successfully returned as a plain-text document: {
+  "error": "unauthorized_client",
+  "error_description": "This client application is not allowed to use the authorization endpoint."
+}.
+
+[20:21:37 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration request was successfully extracted from the HTTP request: {}.
+
+[20:21:37 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration request was successfully validated.
+
+[20:21:37 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration response was successfully returned: {
+  "issuer": "http://localhost:9220/",
+  "authorization_endpoint": "http://localhost:9220/connect/authorize",
+  "token_endpoint": "http://localhost:9220/connect/token",
+  "jwks_uri": "http://localhost:9220/.well-known/jwks",
+  "grant_types_supported": [
+    "password",
+    "implicit",
+    "authorization_code"
+  ],
+  "response_types_supported": [
+    "token",
+    "code",
+    "code token",
+    "id_token",
+    "id_token token",
+    "code id_token",
+    "code id_token token"
+  ],
+  "response_modes_supported": [
+    "form_post",
+    "fragment",
+    "query"
+  ],
+  "scopes_supported": [
+    "openid",
+    "profile",
+    "email",
+    "corsairwebsolution_client"
+  ],
+  "claims_supported": [
+    "aud",
+    "exp",
+    "iat",
+    "iss",
+    "jti",
+    "sub"
+  ],
+  "id_token_signing_alg_values_supported": [
+    "RS256"
+  ],
+  "code_challenge_methods_supported": [
+    "S256"
+  ],
+  "subject_types_supported": [
+    "public"
+  ],
+  "token_endpoint_auth_methods_supported": [
+    "client_secret_basic",
+    "client_secret_post"
+  ],
+  "claims_parameter_supported": false,
+  "request_parameter_supported": false,
+  "request_uri_parameter_supported": false
+}.
+
+[20:21:37 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "0473963ea61e48c3a6772fc6dcaae7f7",
+  "nonce": "1a4ff0b321994a8db3add46a100f799b"
+}.
+
+[20:21:37 Error] OpenIddict.Server.Internal.OpenIddictServerProvider
+The authorization request was rejected because the application 'corsairwebsolutions' was not allowed to use the authorization endpoint.
+
+[20:21:37 Error] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was rejected with the following error: unauthorized_client ; This client application is not allowed to use the authorization endpoint.
+
+[20:21:37 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization response was successfully returned as a plain-text document: {
+  "error": "unauthorized_client",
+  "error_description": "This client application is not allowed to use the authorization endpoint."
+}.
+
+[20:22:52 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration request was successfully extracted from the HTTP request: {}.
+
+[20:22:52 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration request was successfully validated.
+
+[20:22:52 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration response was successfully returned: {
+  "issuer": "http://localhost:9220/",
+  "authorization_endpoint": "http://localhost:9220/connect/authorize",
+  "token_endpoint": "http://localhost:9220/connect/token",
+  "jwks_uri": "http://localhost:9220/.well-known/jwks",
+  "grant_types_supported": [
+    "password",
+    "implicit",
+    "authorization_code"
+  ],
+  "response_types_supported": [
+    "token",
+    "code",
+    "code token",
+    "id_token",
+    "id_token token",
+    "code id_token",
+    "code id_token token"
+  ],
+  "response_modes_supported": [
+    "form_post",
+    "fragment",
+    "query"
+  ],
+  "scopes_supported": [
+    "openid",
+    "profile",
+    "email",
+    "corsairwebsolution_client"
+  ],
+  "claims_supported": [
+    "aud",
+    "exp",
+    "iat",
+    "iss",
+    "jti",
+    "sub"
+  ],
+  "id_token_signing_alg_values_supported": [
+    "RS256"
+  ],
+  "code_challenge_methods_supported": [
+    "S256"
+  ],
+  "subject_types_supported": [
+    "public"
+  ],
+  "token_endpoint_auth_methods_supported": [
+    "client_secret_basic",
+    "client_secret_post"
+  ],
+  "claims_parameter_supported": false,
+  "request_parameter_supported": false,
+  "request_uri_parameter_supported": false
+}.
+
+[20:22:52 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "27d3196b6ef041a990545d705cc7c2b0",
+  "nonce": "2487179b77c6459eb20612b091ab3ace"
+}.
+
+[20:22:52 Error] OpenIddict.Server.Internal.OpenIddictServerProvider
+The authorization request was rejected because the application 'corsairwebsolutions' was not allowed to use the authorization endpoint.
+
+[20:22:52 Error] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was rejected with the following error: unauthorized_client ; This client application is not allowed to use the authorization endpoint.
+
+[20:22:52 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization response was successfully returned as a plain-text document: {
+  "error": "unauthorized_client",
+  "error_description": "This client application is not allowed to use the authorization endpoint."
+}.
+
+[20:24:05 Warning] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware
+Failed to determine the https port for redirect.
+
+[20:24:32 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration request was successfully extracted from the HTTP request: {}.
+
+[20:24:32 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration request was successfully validated.
+
+[20:24:32 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration response was successfully returned: {
+  "issuer": "http://localhost:9220/",
+  "authorization_endpoint": "http://localhost:9220/connect/authorize",
+  "token_endpoint": "http://localhost:9220/connect/token",
+  "jwks_uri": "http://localhost:9220/.well-known/jwks",
+  "grant_types_supported": [
+    "password",
+    "implicit",
+    "authorization_code"
+  ],
+  "response_types_supported": [
+    "token",
+    "code",
+    "code token",
+    "id_token",
+    "id_token token",
+    "code id_token",
+    "code id_token token"
+  ],
+  "response_modes_supported": [
+    "form_post",
+    "fragment",
+    "query"
+  ],
+  "scopes_supported": [
+    "openid",
+    "profile",
+    "email",
+    "corsairwebsolution_client"
+  ],
+  "claims_supported": [
+    "aud",
+    "exp",
+    "iat",
+    "iss",
+    "jti",
+    "sub"
+  ],
+  "id_token_signing_alg_values_supported": [
+    "RS256"
+  ],
+  "code_challenge_methods_supported": [
+    "S256"
+  ],
+  "subject_types_supported": [
+    "public"
+  ],
+  "token_endpoint_auth_methods_supported": [
+    "client_secret_basic",
+    "client_secret_post"
+  ],
+  "claims_parameter_supported": false,
+  "request_parameter_supported": false,
+  "request_uri_parameter_supported": false
+}.
+
+[20:24:32 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "5e7676a8650c411cbc8151d003827030",
+  "nonce": "51cde52da97e4668ad27d993f3911b5d"
+}.
+
+[20:24:32 Error] OpenIddict.Server.Internal.OpenIddictServerProvider
+The authorization request was rejected because the application 'corsairwebsolutions' was not allowed to use the scope corsairwebsolution_client.
+
+[20:24:32 Error] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was rejected with the following error: invalid_request ; This client application is not allowed to use the specified scope.
+
+[20:24:32 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization response was successfully returned as a plain-text document: {
+  "error": "invalid_request",
+  "error_description": "This client application is not allowed to use the specified scope."
+}.
+
+[20:24:58 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration request was successfully extracted from the HTTP request: {}.
+
+[20:24:58 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration request was successfully validated.
+
+[20:24:58 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration response was successfully returned: {
+  "issuer": "http://localhost:9220/",
+  "authorization_endpoint": "http://localhost:9220/connect/authorize",
+  "token_endpoint": "http://localhost:9220/connect/token",
+  "jwks_uri": "http://localhost:9220/.well-known/jwks",
+  "grant_types_supported": [
+    "password",
+    "implicit",
+    "authorization_code"
+  ],
+  "response_types_supported": [
+    "token",
+    "code",
+    "code token",
+    "id_token",
+    "id_token token",
+    "code id_token",
+    "code id_token token"
+  ],
+  "response_modes_supported": [
+    "form_post",
+    "fragment",
+    "query"
+  ],
+  "scopes_supported": [
+    "openid",
+    "profile",
+    "email",
+    "corsairwebsolution_client"
+  ],
+  "claims_supported": [
+    "aud",
+    "exp",
+    "iat",
+    "iss",
+    "jti",
+    "sub"
+  ],
+  "id_token_signing_alg_values_supported": [
+    "RS256"
+  ],
+  "code_challenge_methods_supported": [
+    "S256"
+  ],
+  "subject_types_supported": [
+    "public"
+  ],
+  "token_endpoint_auth_methods_supported": [
+    "client_secret_basic",
+    "client_secret_post"
+  ],
+  "claims_parameter_supported": false,
+  "request_parameter_supported": false,
+  "request_uri_parameter_supported": false
+}.
+
+[20:24:58 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "1a370f7da3cc4bf59a066d2b6a589b64",
+  "nonce": "8499d16b67fc4928ac7dd636c00211df"
+}.
+
+[20:24:58 Error] OpenIddict.Server.Internal.OpenIddictServerProvider
+The authorization request was rejected because the application 'corsairwebsolutions' was not allowed to use the scope corsairwebsolution_client.
+
+[20:24:58 Error] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was rejected with the following error: invalid_request ; This client application is not allowed to use the specified scope.
+
+[20:24:58 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization response was successfully returned as a plain-text document: {
+  "error": "invalid_request",
+  "error_description": "This client application is not allowed to use the specified scope."
+}.
+
+[20:26:06 Warning] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware
+Failed to determine the https port for redirect.
+
+[20:26:35 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration request was successfully extracted from the HTTP request: {}.
+
+[20:26:35 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration request was successfully validated.
+
+[20:26:35 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration response was successfully returned: {
+  "issuer": "http://localhost:9220/",
+  "authorization_endpoint": "http://localhost:9220/connect/authorize",
+  "token_endpoint": "http://localhost:9220/connect/token",
+  "jwks_uri": "http://localhost:9220/.well-known/jwks",
+  "grant_types_supported": [
+    "password",
+    "implicit",
+    "authorization_code"
+  ],
+  "response_types_supported": [
+    "token",
+    "code",
+    "code token",
+    "id_token",
+    "id_token token",
+    "code id_token",
+    "code id_token token"
+  ],
+  "response_modes_supported": [
+    "form_post",
+    "fragment",
+    "query"
+  ],
+  "scopes_supported": [
+    "openid",
+    "profile",
+    "email",
+    "corsairwebsolution_client"
+  ],
+  "claims_supported": [
+    "aud",
+    "exp",
+    "iat",
+    "iss",
+    "jti",
+    "sub"
+  ],
+  "id_token_signing_alg_values_supported": [
+    "RS256"
+  ],
+  "code_challenge_methods_supported": [
+    "S256"
+  ],
+  "subject_types_supported": [
+    "public"
+  ],
+  "token_endpoint_auth_methods_supported": [
+    "client_secret_basic",
+    "client_secret_post"
+  ],
+  "claims_parameter_supported": false,
+  "request_parameter_supported": false,
+  "request_uri_parameter_supported": false
+}.
+
+[20:26:35 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "dc8a86695bcf4588a9e733e62ff1555d",
+  "nonce": "a700a74ae7e04c0e9584623a440bbfdc"
+}.
+
+[20:26:35 Error] OpenIddict.Server.Internal.OpenIddictServerProvider
+The authorization request was rejected because the application 'corsairwebsolutions' was not allowed to use the scope corsairwebsolution_client.
+
+[20:26:35 Error] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was rejected with the following error: invalid_request ; This client application is not allowed to use the specified scope.
+
+[20:26:35 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization response was successfully returned as a plain-text document: {
+  "error": "invalid_request",
+  "error_description": "This client application is not allowed to use the specified scope."
+}.
+
+[20:26:47 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration request was successfully extracted from the HTTP request: {}.
+
+[20:26:47 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration request was successfully validated.
+
+[20:26:47 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration response was successfully returned: {
+  "issuer": "http://localhost:9220/",
+  "authorization_endpoint": "http://localhost:9220/connect/authorize",
+  "token_endpoint": "http://localhost:9220/connect/token",
+  "jwks_uri": "http://localhost:9220/.well-known/jwks",
+  "grant_types_supported": [
+    "password",
+    "implicit",
+    "authorization_code"
+  ],
+  "response_types_supported": [
+    "token",
+    "code",
+    "code token",
+    "id_token",
+    "id_token token",
+    "code id_token",
+    "code id_token token"
+  ],
+  "response_modes_supported": [
+    "form_post",
+    "fragment",
+    "query"
+  ],
+  "scopes_supported": [
+    "openid",
+    "profile",
+    "email",
+    "corsairwebsolution_client"
+  ],
+  "claims_supported": [
+    "aud",
+    "exp",
+    "iat",
+    "iss",
+    "jti",
+    "sub"
+  ],
+  "id_token_signing_alg_values_supported": [
+    "RS256"
+  ],
+  "code_challenge_methods_supported": [
+    "S256"
+  ],
+  "subject_types_supported": [
+    "public"
+  ],
+  "token_endpoint_auth_methods_supported": [
+    "client_secret_basic",
+    "client_secret_post"
+  ],
+  "claims_parameter_supported": false,
+  "request_parameter_supported": false,
+  "request_uri_parameter_supported": false
+}.
+
+[20:26:47 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "75313b931381418db818092f3dd7db7e",
+  "nonce": "6580ba5305ba4b39a15ac773a81086f4"
+}.
+
+[20:26:47 Error] OpenIddict.Server.Internal.OpenIddictServerProvider
+The authorization request was rejected because the application 'corsairwebsolutions' was not allowed to use the scope corsairwebsolution_client.
+
+[20:26:47 Error] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was rejected with the following error: invalid_request ; This client application is not allowed to use the specified scope.
+
+[20:26:47 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization response was successfully returned as a plain-text document: {
+  "error": "invalid_request",
+  "error_description": "This client application is not allowed to use the specified scope."
+}.
+
+[20:27:14 Warning] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware
+Failed to determine the https port for redirect.
+
+[20:28:02 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration request was successfully extracted from the HTTP request: {}.
+
+[20:28:02 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration request was successfully validated.
+
+[20:28:02 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration response was successfully returned: {
+  "issuer": "http://localhost:9220/",
+  "authorization_endpoint": "http://localhost:9220/connect/authorize",
+  "token_endpoint": "http://localhost:9220/connect/token",
+  "jwks_uri": "http://localhost:9220/.well-known/jwks",
+  "grant_types_supported": [
+    "password",
+    "implicit",
+    "authorization_code"
+  ],
+  "response_types_supported": [
+    "token",
+    "code",
+    "code token",
+    "id_token",
+    "id_token token",
+    "code id_token",
+    "code id_token token"
+  ],
+  "response_modes_supported": [
+    "form_post",
+    "fragment",
+    "query"
+  ],
+  "scopes_supported": [
+    "openid",
+    "profile",
+    "email",
+    "corsairwebsolution_client"
+  ],
+  "claims_supported": [
+    "aud",
+    "exp",
+    "iat",
+    "iss",
+    "jti",
+    "sub"
+  ],
+  "id_token_signing_alg_values_supported": [
+    "RS256"
+  ],
+  "code_challenge_methods_supported": [
+    "S256"
+  ],
+  "subject_types_supported": [
+    "public"
+  ],
+  "token_endpoint_auth_methods_supported": [
+    "client_secret_basic",
+    "client_secret_post"
+  ],
+  "claims_parameter_supported": false,
+  "request_parameter_supported": false,
+  "request_uri_parameter_supported": false
+}.
+
+[20:28:02 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "d30691ab70474948b602f5114ad0afab",
+  "nonce": "ceca1b3e479145b682db13aba2ebb0c4"
+}.
+
+[20:28:02 Error] OpenIddict.Server.Internal.OpenIddictServerProvider
+The authorization request was rejected because the application 'corsairwebsolutions' was not allowed to use the scope corsairwebsolution_client.
+
+[20:28:02 Error] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was rejected with the following error: invalid_request ; This client application is not allowed to use the specified scope.
+
+[20:28:02 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization response was successfully returned as a plain-text document: {
+  "error": "invalid_request",
+  "error_description": "This client application is not allowed to use the specified scope."
+}.
+
+[20:30:34 Warning] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware
+Failed to determine the https port for redirect.
+
+[20:31:08 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration request was successfully extracted from the HTTP request: {}.
+
+[20:31:08 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration request was successfully validated.
+
+[20:31:08 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration response was successfully returned: {
+  "issuer": "http://localhost:9220/",
+  "authorization_endpoint": "http://localhost:9220/connect/authorize",
+  "token_endpoint": "http://localhost:9220/connect/token",
+  "jwks_uri": "http://localhost:9220/.well-known/jwks",
+  "grant_types_supported": [
+    "password",
+    "implicit",
+    "authorization_code"
+  ],
+  "response_types_supported": [
+    "token",
+    "code",
+    "code token",
+    "id_token",
+    "id_token token",
+    "code id_token",
+    "code id_token token"
+  ],
+  "response_modes_supported": [
+    "form_post",
+    "fragment",
+    "query"
+  ],
+  "scopes_supported": [
+    "openid",
+    "profile",
+    "email",
+    "corsairwebsolution_client"
+  ],
+  "claims_supported": [
+    "aud",
+    "exp",
+    "iat",
+    "iss",
+    "jti",
+    "sub"
+  ],
+  "id_token_signing_alg_values_supported": [
+    "RS256"
+  ],
+  "code_challenge_methods_supported": [
+    "S256"
+  ],
+  "subject_types_supported": [
+    "public"
+  ],
+  "token_endpoint_auth_methods_supported": [
+    "client_secret_basic",
+    "client_secret_post"
+  ],
+  "claims_parameter_supported": false,
+  "request_parameter_supported": false,
+  "request_uri_parameter_supported": false
+}.
+
+[20:31:08 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "d54e5e0dd8ed4d70b7130c8c5f71a9f8",
+  "nonce": "49dd8fafc2d7438880bd0ab9b7e4d861"
+}.
+
+[20:31:08 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully validated.
+
+[20:31:08 Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+AuthenticationScheme: Identity.Application was challenged.
+
+[20:34:57 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration request was successfully extracted from the HTTP request: {}.
+
+[20:34:57 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration request was successfully validated.
+
+[20:34:57 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration response was successfully returned: {
+  "issuer": "http://localhost:9220/",
+  "authorization_endpoint": "http://localhost:9220/connect/authorize",
+  "token_endpoint": "http://localhost:9220/connect/token",
+  "jwks_uri": "http://localhost:9220/.well-known/jwks",
+  "grant_types_supported": [
+    "password",
+    "implicit",
+    "authorization_code"
+  ],
+  "response_types_supported": [
+    "token",
+    "code",
+    "code token",
+    "id_token",
+    "id_token token",
+    "code id_token",
+    "code id_token token"
+  ],
+  "response_modes_supported": [
+    "form_post",
+    "fragment",
+    "query"
+  ],
+  "scopes_supported": [
+    "openid",
+    "profile",
+    "email",
+    "corsairwebsolution_client"
+  ],
+  "claims_supported": [
+    "aud",
+    "exp",
+    "iat",
+    "iss",
+    "jti",
+    "sub"
+  ],
+  "id_token_signing_alg_values_supported": [
+    "RS256"
+  ],
+  "code_challenge_methods_supported": [
+    "S256"
+  ],
+  "subject_types_supported": [
+    "public"
+  ],
+  "token_endpoint_auth_methods_supported": [
+    "client_secret_basic",
+    "client_secret_post"
+  ],
+  "claims_parameter_supported": false,
+  "request_parameter_supported": false,
+  "request_uri_parameter_supported": false
+}.
+
+[20:34:57 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "2b6c4abad07443b1ba2d2d5c15187357",
+  "nonce": "911570a2ce0547a99a91daf66739fb02"
+}.
+
+[20:34:57 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully validated.
+
+[20:34:57 Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+AuthenticationScheme: Identity.Application was challenged.
+
+[20:50:48 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration request was successfully extracted from the HTTP request: {}.
+
+[20:50:48 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration request was successfully validated.
+
+[20:50:48 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration response was successfully returned: {
+  "issuer": "http://localhost:9220/",
+  "authorization_endpoint": "http://localhost:9220/connect/authorize",
+  "token_endpoint": "http://localhost:9220/connect/token",
+  "jwks_uri": "http://localhost:9220/.well-known/jwks",
+  "grant_types_supported": [
+    "password",
+    "implicit",
+    "authorization_code"
+  ],
+  "response_types_supported": [
+    "token",
+    "code",
+    "code token",
+    "id_token",
+    "id_token token",
+    "code id_token",
+    "code id_token token"
+  ],
+  "response_modes_supported": [
+    "form_post",
+    "fragment",
+    "query"
+  ],
+  "scopes_supported": [
+    "openid",
+    "profile",
+    "email",
+    "corsairwebsolution_client"
+  ],
+  "claims_supported": [
+    "aud",
+    "exp",
+    "iat",
+    "iss",
+    "jti",
+    "sub"
+  ],
+  "id_token_signing_alg_values_supported": [
+    "RS256"
+  ],
+  "code_challenge_methods_supported": [
+    "S256"
+  ],
+  "subject_types_supported": [
+    "public"
+  ],
+  "token_endpoint_auth_methods_supported": [
+    "client_secret_basic",
+    "client_secret_post"
+  ],
+  "claims_parameter_supported": false,
+  "request_parameter_supported": false,
+  "request_uri_parameter_supported": false
+}.
+
+[20:50:48 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "6df428fc71b5482db1b2d80128549914",
+  "nonce": "4c8e3b410298464fb41e76336c221d4c"
+}.
+
+[20:50:48 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully validated.
+
+[20:50:48 Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+AuthenticationScheme: Identity.Application was challenged.
+
+[20:52:12 Warning] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware
+Failed to determine the https port for redirect.
+
+[20:52:47 Warning] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware
+Failed to determine the https port for redirect.
+
+[20:59:05 Warning] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware
+Failed to determine the https port for redirect.
+
+[20:59:52 Warning] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware
+Failed to determine the https port for redirect.
+
+[21:00:01 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration request was successfully extracted from the HTTP request: {}.
+
+[21:00:01 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration request was successfully validated.
+
+[21:00:01 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration response was successfully returned: {
+  "issuer": "http://localhost:9220/",
+  "authorization_endpoint": "http://localhost:9220/connect/authorize",
+  "token_endpoint": "http://localhost:9220/connect/token",
+  "jwks_uri": "http://localhost:9220/.well-known/jwks",
+  "grant_types_supported": [
+    "password",
+    "implicit",
+    "authorization_code"
+  ],
+  "response_types_supported": [
+    "token",
+    "code",
+    "code token",
+    "id_token",
+    "id_token token",
+    "code id_token",
+    "code id_token token"
+  ],
+  "response_modes_supported": [
+    "form_post",
+    "fragment",
+    "query"
+  ],
+  "scopes_supported": [
+    "openid",
+    "profile",
+    "email",
+    "corsairwebsolution_client"
+  ],
+  "claims_supported": [
+    "aud",
+    "exp",
+    "iat",
+    "iss",
+    "jti",
+    "sub"
+  ],
+  "id_token_signing_alg_values_supported": [
+    "RS256"
+  ],
+  "code_challenge_methods_supported": [
+    "S256"
+  ],
+  "subject_types_supported": [
+    "public"
+  ],
+  "token_endpoint_auth_methods_supported": [
+    "client_secret_basic",
+    "client_secret_post"
+  ],
+  "claims_parameter_supported": false,
+  "request_parameter_supported": false,
+  "request_uri_parameter_supported": false
+}.
+
+[21:00:01 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "567c04de98e640dd8a1186ba83043f8b",
+  "nonce": "6b095554e8544c4aacfd809a7a65fee3"
+}.
+
+[21:00:01 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully validated.
+
+[21:00:01 Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+AuthenticationScheme: Identity.Application was challenged.
+
+[21:01:12 Error] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was rejected because an invalid 'Content-Type' header was specified: application/json.
+
+[21:01:12 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization response was successfully returned as a plain-text document: {
+  "error": "invalid_request",
+  "error_description": "The specified 'Content-Type' header is not valid."
+}.
+
+[21:03:02 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {}.
+
+[21:03:02 Error] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was rejected because the mandatory 'client_id' parameter was missing.
+
+[21:03:02 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization response was successfully returned as a plain-text document: {
+  "error": "invalid_request",
+  "error_description": "The mandatory 'client_id' parameter is missing."
+}.
+
+[21:04:42 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration request was successfully extracted from the HTTP request: {}.
+
+[21:04:42 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration request was successfully validated.
+
+[21:04:42 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration response was successfully returned: {
+  "issuer": "http://localhost:9220/",
+  "authorization_endpoint": "http://localhost:9220/connect/authorize",
+  "token_endpoint": "http://localhost:9220/connect/token",
+  "jwks_uri": "http://localhost:9220/.well-known/jwks",
+  "grant_types_supported": [
+    "password",
+    "implicit",
+    "authorization_code"
+  ],
+  "response_types_supported": [
+    "token",
+    "code",
+    "code token",
+    "id_token",
+    "id_token token",
+    "code id_token",
+    "code id_token token"
+  ],
+  "response_modes_supported": [
+    "form_post",
+    "fragment",
+    "query"
+  ],
+  "scopes_supported": [
+    "openid",
+    "profile",
+    "email",
+    "corsairwebsolution_client"
+  ],
+  "claims_supported": [
+    "aud",
+    "exp",
+    "iat",
+    "iss",
+    "jti",
+    "sub"
+  ],
+  "id_token_signing_alg_values_supported": [
+    "RS256"
+  ],
+  "code_challenge_methods_supported": [
+    "S256"
+  ],
+  "subject_types_supported": [
+    "public"
+  ],
+  "token_endpoint_auth_methods_supported": [
+    "client_secret_basic",
+    "client_secret_post"
+  ],
+  "claims_parameter_supported": false,
+  "request_parameter_supported": false,
+  "request_uri_parameter_supported": false
+}.
+
+[21:04:42 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "b1d742a417a647759a550bc49ba2ea21",
+  "nonce": "9f07aeed2295472596ea0d95cf77c93c"
+}.
+
+[21:04:42 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully validated.
+
+[21:04:42 Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+AuthenticationScheme: Identity.Application was challenged.
+
+[21:15:28 Error] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was rejected because an invalid 'Content-Type' header was specified: application/json.
+
+[21:15:28 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization response was successfully returned as a plain-text document: {
+  "error": "invalid_request",
+  "error_description": "The specified 'Content-Type' header is not valid."
+}.
+
+[21:16:00 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {}.
+
+[21:16:00 Error] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was rejected because the mandatory 'client_id' parameter was missing.
+
+[21:16:00 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization response was successfully returned as a plain-text document: {
+  "error": "invalid_request",
+  "error_description": "The mandatory 'client_id' parameter is missing."
+}.
+
+[21:19:59 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {}.
+
+[21:19:59 Error] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was rejected because the mandatory 'client_id' parameter was missing.
+
+[21:19:59 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization response was successfully returned as a plain-text document: {
+  "error": "invalid_request",
+  "error_description": "The mandatory 'client_id' parameter is missing."
+}.
+
+[21:20:26 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {}.
+
+[21:20:26 Error] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was rejected because the mandatory 'client_id' parameter was missing.
+
+[21:20:26 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization response was successfully returned as a plain-text document: {
+  "error": "invalid_request",
+  "error_description": "The mandatory 'client_id' parameter is missing."
+}.
+
+[21:20:55 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "b1d742a417a647759a550bc49ba2ea21",
+  "nonce": "9f07aeed2295472596ea0d95cf77c93c",
+  "username": "corsairwebsolutions@gmail.com",
+  "password": "[removed for security reasons]"
+}.
+
+[21:20:55 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully validated.
+
+[21:20:55 Error] Microsoft.AspNetCore.Mvc.Internal.ActionSelector
+Request matched multiple actions resulting in ambiguity. Matching actions: Mvc.Server.AuthorizationController.Accept (ASP.NET Core 2.2 with Angular 7)
+Mvc.Server.AuthorizationController.Deny (ASP.NET Core 2.2 with Angular 7)
+
+[21:20:55 Error] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+Mvc.Server.AuthorizationController.Accept (ASP.NET Core 2.2 with Angular 7)
+Mvc.Server.AuthorizationController.Deny (ASP.NET Core 2.2 with Angular 7)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.RouteCollection.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+[21:21:57 Warning] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware
+Failed to determine the https port for redirect.
+
+[21:22:15 Warning] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware
+Failed to determine the https port for redirect.
+
+[21:22:16 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "b1d742a417a647759a550bc49ba2ea21",
+  "nonce": "9f07aeed2295472596ea0d95cf77c93c",
+  "username": "corsairwebsolutions@gmail.com",
+  "password": "[removed for security reasons]"
+}.
+
+[21:22:16 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully validated.
+
+[21:22:16 Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+AuthenticationScheme: Identity.Application was challenged.
+
+[21:23:00 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "b1d742a417a647759a550bc49ba2ea21",
+  "nonce": "9f07aeed2295472596ea0d95cf77c93c",
+  "username": "corsairwebsolutions@gmail.com",
+  "password": "[removed for security reasons]"
+}.
+
+[21:23:00 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully validated.
+
+[21:23:00 Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+AuthenticationScheme: Identity.Application was challenged.
+
+[21:23:02 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "b1d742a417a647759a550bc49ba2ea21",
+  "nonce": "9f07aeed2295472596ea0d95cf77c93c",
+  "username": "corsairwebsolutions@gmail.com",
+  "password": "[removed for security reasons]"
+}.
+
+[21:23:02 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully validated.
+
+[21:23:02 Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+AuthenticationScheme: Identity.Application was challenged.
+
+[21:23:23 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "b1d742a417a647759a550bc49ba2ea21",
+  "nonce": "9f07aeed2295472596ea0d95cf77c93c",
+  "username": "corsairwebsolutions@gmail.com",
+  "password": "[removed for security reasons]"
+}.
+
+[21:23:23 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully validated.
+
+[21:23:23 Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+AuthenticationScheme: Identity.Application was challenged.
+
+[21:25:10 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "b1d742a417a647759a550bc49ba2ea21",
+  "nonce": "9f07aeed2295472596ea0d95cf77c93c",
+  "username": "corsairwebsolutions@gmail.com",
+  "password": "[removed for security reasons]"
+}.
+
+[21:25:10 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully validated.
+
+[21:25:10 Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+AuthenticationScheme: Identity.Application was challenged.
+
+[21:27:19 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "b1d742a417a647759a550bc49ba2ea21",
+  "nonce": "9f07aeed2295472596ea0d95cf77c93c",
+  "username": "corsairwebsolutions@gmail.com",
+  "password": "[removed for security reasons]"
+}.
+
+[21:27:19 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully validated.
+
+[21:27:19 Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+AuthenticationScheme: Identity.Application was challenged.
+
+[21:28:19 Warning] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware
+Failed to determine the https port for redirect.
+
+[21:30:57 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "username": "corsairwebsolutions@gmail.com",
+  "password": "[removed for security reasons]"
+}.
+
+[21:30:57 Error] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was rejected because the mandatory 'client_id' parameter was missing.
+
+[21:30:57 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization response was successfully returned as a plain-text document: {
+  "error": "invalid_request",
+  "error_description": "The mandatory 'client_id' parameter is missing."
+}.
+
+[21:30:58 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "username": "corsairwebsolutions@gmail.com",
+  "password": "[removed for security reasons]"
+}.
+
+[21:30:58 Error] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was rejected because the mandatory 'client_id' parameter was missing.
+
+[21:30:58 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization response was successfully returned as a plain-text document: {
+  "error": "invalid_request",
+  "error_description": "The mandatory 'client_id' parameter is missing."
+}.
+
+[21:31:22 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "username": "corsairwebsolutions@gmail.com",
+  "password": "[removed for security reasons]"
+}.
+
+[21:31:22 Error] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was rejected because the mandatory 'client_id' parameter was missing.
+
+[21:31:22 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization response was successfully returned as a plain-text document: {
+  "error": "invalid_request",
+  "error_description": "The mandatory 'client_id' parameter is missing."
+}.
+
+[21:38:37 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "b1d742a417a647759a550bc49ba2ea21",
+  "nonce": "9f07aeed2295472596ea0d95cf77c93c",
+  "username": "corsairwebsolutions@gmail.com",
+  "password": "[removed for security reasons]"
+}.
+
+[21:38:37 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully validated.
+
+[21:38:37 Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+AuthenticationScheme: Identity.Application was challenged.
+
+[21:39:07 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "b1d742a417a647759a550bc49ba2ea21",
+  "nonce": "9f07aeed2295472596ea0d95cf77c93c",
+  "username": "corsairwebsolutions@gmail.com",
+  "password": "[removed for security reasons]"
+}.
+
+[21:39:07 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully validated.
+
+[21:39:07 Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+AuthenticationScheme: Identity.Application was challenged.
+
+[21:44:34 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "b1d742a417a647759a550bc49ba2ea21",
+  "nonce": "9f07aeed2295472596ea0d95cf77c93c",
+  "username": "corsairwebsolutions@gmail.com",
+  "password": "[removed for security reasons]"
+}.
+
+[21:44:34 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully validated.
+
+[21:44:34 Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+AuthenticationScheme: Identity.Application was challenged.
+
+[21:46:03 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "b1d742a417a647759a550bc49ba2ea21",
+  "nonce": "9f07aeed2295472596ea0d95cf77c93c",
+  "username": "corsairwebsolutions@gmail.com",
+  "password": "[removed for security reasons]"
+}.
+
+[21:46:03 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully validated.
+
+[21:46:03 Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+AuthenticationScheme: Identity.Application was challenged.
+
+[21:52:51 Fatal] Microsoft.AspNetCore.Hosting.Internal.WebHost
+Application startup exception
+System.InvalidOperationException: Scheme already exists: Bearer
+   at Microsoft.AspNetCore.Authentication.AuthenticationOptions.AddScheme(String name, Action`1 configureBuilder)
+   at Microsoft.AspNetCore.Authentication.AuthenticationBuilder.<>c__DisplayClass4_0`2.<AddSchemeHelper>b__0(AuthenticationOptions o)
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.<>c__DisplayClass5_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsManager`1.Get(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.get_Value()
+   at Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider..ctor(IOptions`1 options, IDictionary`2 schemes)
+   at Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider..ctor(IOptions`1 options)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitSingleton(SingletonCallSite singletonCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.Internal.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+
+[21:52:51 Error] Microsoft.AspNetCore.Server.Kestrel
+Connection id "0HLN9B22BEGFP", Request id "0HLN9B22BEGFP:00000001": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Writing to the response body is invalid for responses with status code 500.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ThrowWritingToResponseBodyNotSupported()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.WriteAsync(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.WriteAsync(Byte[] buffer, Int32 offset, Int32 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.StreamWriter.Flush(Boolean flushStream, Boolean flushEncoder)
+   at System.IO.StreamWriter.Write(String value)
+   at Microsoft.AspNetCore.Hosting.Views.ErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+
+[21:52:51 Error] Microsoft.AspNetCore.Server.Kestrel
+Connection id "0HLN9B22BEGFN", Request id "0HLN9B22BEGFN:00000001": An unhandled exception was thrown by the application.
+System.ArgumentOutOfRangeException: Index and count must refer to a location within the buffer.
+Parameter name: chars
+   at System.Text.EncoderNLS.GetBytes(Char[] chars, Int32 charIndex, Int32 charCount, Byte[] bytes, Int32 byteIndex, Boolean flush)
+   at System.IO.StreamWriter.Flush(Boolean flushStream, Boolean flushEncoder)
+   at System.IO.StreamWriter.Write(String value)
+   at Microsoft.AspNetCore.Hosting.Views.ErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+
+[21:52:51 Error] Microsoft.AspNetCore.Server.Kestrel
+Connection id "0HLN9B22BEGFQ", Request id "0HLN9B22BEGFQ:00000001": An unhandled exception was thrown by the application.
+System.OverflowException: Arithmetic operation resulted in an overflow.
+   at System.IO.StreamWriter.Write(String value)
+   at Microsoft.AspNetCore.Hosting.Views.ErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+
+[21:52:51 Error] Microsoft.AspNetCore.Server.Kestrel
+Connection id "0HLN9B22BEGFO", Request id "0HLN9B22BEGFO:00000001": An unhandled exception was thrown by the application.
+System.OverflowException: Arithmetic operation resulted in an overflow.
+   at System.IO.StreamWriter.Write(String value)
+   at Microsoft.AspNetCore.Hosting.Views.ErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+
+[21:53:10 Fatal] Microsoft.AspNetCore.Hosting.Internal.WebHost
+Application startup exception
+System.InvalidOperationException: Scheme already exists: Bearer
+   at Microsoft.AspNetCore.Authentication.AuthenticationOptions.AddScheme(String name, Action`1 configureBuilder)
+   at Microsoft.AspNetCore.Authentication.AuthenticationBuilder.<>c__DisplayClass4_0`2.<AddSchemeHelper>b__0(AuthenticationOptions o)
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.<>c__DisplayClass5_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsManager`1.Get(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.get_Value()
+   at Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider..ctor(IOptions`1 options, IDictionary`2 schemes)
+   at Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider..ctor(IOptions`1 options)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitSingleton(SingletonCallSite singletonCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.Internal.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+
+[21:54:00 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "b1d742a417a647759a550bc49ba2ea21",
+  "nonce": "9f07aeed2295472596ea0d95cf77c93c",
+  "username": "corsairwebsolutions@gmail.com",
+  "password": "[removed for security reasons]"
+}.
+
+[21:54:01 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully validated.
+
+[21:54:01 Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+AuthenticationScheme: Identity.Application was challenged.
+
+[21:55:18 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "b1d742a417a647759a550bc49ba2ea21",
+  "nonce": "9f07aeed2295472596ea0d95cf77c93c",
+  "username": "corsairwebsolutions@gmail.com",
+  "password": "[removed for security reasons]"
+}.
+
+[21:55:18 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully validated.
+
+[21:57:04 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "b1d742a417a647759a550bc49ba2ea21",
+  "nonce": "9f07aeed2295472596ea0d95cf77c93c",
+  "username": "corsairwebsolutions@gmail.com",
+  "password": "[removed for security reasons]"
+}.
+
+[21:57:05 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully validated.
+
+[21:57:31 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "b1d742a417a647759a550bc49ba2ea21",
+  "nonce": "9f07aeed2295472596ea0d95cf77c93c",
+  "username": "corsairwebsolutions@gmail.com",
+  "password": "[removed for security reasons]"
+}.
+
+[21:57:31 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully validated.
+
+[22:04:53 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "b1d742a417a647759a550bc49ba2ea21",
+  "nonce": "9f07aeed2295472596ea0d95cf77c93c",
+  "username": "corsairwebsolutions@gmail.com",
+  "password": "[removed for security reasons]"
+}.
+
+[22:04:53 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully validated.
+
+[22:05:02 Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+AuthenticationScheme: Identity.Application signed in.
+
+[22:05:33 Error] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The authentication ticket was rejected because the mandatory subject claim was missing.
+   at AspNet.Security.OpenIdConnect.Server.OpenIdConnectServerHandler.SignInAsync(AuthenticationTicket ticket)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.SignInAsync(HttpContext context, String scheme, ClaimsPrincipal principal, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Mvc.SignInResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+[22:06:11 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "b1d742a417a647759a550bc49ba2ea21",
+  "nonce": "9f07aeed2295472596ea0d95cf77c93c",
+  "username": "corsairwebsolutions@gmail.com",
+  "password": "[removed for security reasons]"
+}.
+
+[22:06:12 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully validated.
+
+[22:06:13 Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+AuthenticationScheme: Identity.Application signed in.
+
+[22:06:13 Error] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The authentication ticket was rejected because the mandatory subject claim was missing.
+   at AspNet.Security.OpenIdConnect.Server.OpenIdConnectServerHandler.SignInAsync(AuthenticationTicket ticket)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.SignInAsync(HttpContext context, String scheme, ClaimsPrincipal principal, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Mvc.SignInResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+[22:11:21 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "b1d742a417a647759a550bc49ba2ea21",
+  "nonce": "9f07aeed2295472596ea0d95cf77c93c",
+  "username": "corsairwebsolutions@gmail.com",
+  "password": "[removed for security reasons]"
+}.
+
+[22:11:21 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully validated.
+
+[22:11:28 Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+AuthenticationScheme: Identity.Application signed in.
+
+[22:12:10 Debug] OpenIddict.Server.Internal.OpenIddictServerHandler
+'AspNet.Identity.SecurityStamp' was excluded from the access token claims.
+
+[22:12:10 Debug] OpenIddict.Server.Internal.OpenIddictServerHandler
+'http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier' was excluded from the identity token claims.
+
+[22:12:10 Debug] OpenIddict.Server.Internal.OpenIddictServerHandler
+'http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name' was excluded from the identity token claims.
+
+[22:12:10 Debug] OpenIddict.Server.Internal.OpenIddictServerHandler
+'AspNet.Identity.SecurityStamp' was excluded from the identity token claims.
+
+[22:12:10 Debug] OpenIddict.Server.Internal.OpenIddictServerHandler
+'http://schemas.microsoft.com/ws/2008/06/identity/claims/role' was excluded from the identity token claims.
+
+[22:12:10 Error] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: IDX10630: The '[PII is hidden]' for signing cannot be smaller than '[PII is hidden]' bits. KeySize: '[PII is hidden]'.
+Parameter name: key.KeySize
+   at Microsoft.IdentityModel.Tokens.AsymmetricSignatureProvider.ValidateAsymmetricSecurityKeySize(SecurityKey key, String algorithm, Boolean willCreateSignatures)
+   at Microsoft.IdentityModel.Tokens.AsymmetricSignatureProvider..ctor(SecurityKey key, String algorithm, Boolean willCreateSignatures)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateSignatureProvider(SecurityKey key, String algorithm, Boolean willCreateSignatures)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateForSigning(SecurityKey key, String algorithm)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateJwtSecurityTokenPrivate(String issuer, String audience, ClaimsIdentity subject, Nullable`1 notBefore, Nullable`1 expires, Nullable`1 issuedAt, SigningCredentials signingCredentials, EncryptingCredentials encryptingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateJwtSecurityToken(SecurityTokenDescriptor tokenDescriptor)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateEncodedJwt(SecurityTokenDescriptor tokenDescriptor)
+   at AspNet.Security.OpenIdConnect.Server.OpenIdConnectServerHandler.SerializeIdentityTokenAsync(ClaimsPrincipal principal, AuthenticationProperties properties, OpenIdConnectRequest request, OpenIdConnectResponse response)
+   at AspNet.Security.OpenIdConnect.Server.OpenIdConnectServerHandler.SignInAsync(AuthenticationTicket ticket)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.SignInAsync(HttpContext context, String scheme, ClaimsPrincipal principal, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Mvc.SignInResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+[22:15:33 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully extracted from the HTTP request: {
+  "client_id": "corsairwebsolutions",
+  "redirect_uri": "http://localhost:21055/auth-callback",
+  "response_type": "id_token token",
+  "scope": "openid profile corsairwebsolution_client",
+  "state": "b1d742a417a647759a550bc49ba2ea21",
+  "nonce": "9f07aeed2295472596ea0d95cf77c93c",
+  "username": "corsairwebsolutions@gmail.com",
+  "password": "[removed for security reasons]"
+}.
+
+[22:15:33 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization request was successfully validated.
+
+[22:15:36 Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler
+AuthenticationScheme: Identity.Application signed in.
+
+[22:15:36 Debug] OpenIddict.Server.Internal.OpenIddictServerHandler
+'AspNet.Identity.SecurityStamp' was excluded from the access token claims.
+
+[22:15:36 Debug] OpenIddict.Server.Internal.OpenIddictServerHandler
+'http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier' was excluded from the identity token claims.
+
+[22:15:36 Debug] OpenIddict.Server.Internal.OpenIddictServerHandler
+'http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name' was excluded from the identity token claims.
+
+[22:15:36 Debug] OpenIddict.Server.Internal.OpenIddictServerHandler
+'AspNet.Identity.SecurityStamp' was excluded from the identity token claims.
+
+[22:15:36 Debug] OpenIddict.Server.Internal.OpenIddictServerHandler
+'http://schemas.microsoft.com/ws/2008/06/identity/claims/role' was excluded from the identity token claims.
+
+[22:15:36 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The authorization response was successfully returned to 'http://localhost:21055/auth-callback' using the fragment response mode: {
+  "token_type": "Bearer",
+  "access_token": "[removed for security reasons]",
+  "expires_in": 3600,
+  "id_token": "[removed for security reasons]",
+  "state": "b1d742a417a647759a550bc49ba2ea21"
+}.
+
+[22:16:43 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration request was successfully extracted from the HTTP request: {}.
+
+[22:16:43 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration request was successfully validated.
+
+[22:16:43 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The configuration response was successfully returned: {
+  "issuer": "http://localhost:9220/",
+  "authorization_endpoint": "http://localhost:9220/connect/authorize",
+  "token_endpoint": "http://localhost:9220/connect/token",
+  "jwks_uri": "http://localhost:9220/.well-known/jwks",
+  "grant_types_supported": [
+    "password",
+    "implicit",
+    "authorization_code"
+  ],
+  "response_types_supported": [
+    "token",
+    "code",
+    "code token",
+    "id_token",
+    "id_token token",
+    "code id_token",
+    "code id_token token"
+  ],
+  "response_modes_supported": [
+    "form_post",
+    "fragment",
+    "query"
+  ],
+  "scopes_supported": [
+    "openid",
+    "profile",
+    "email",
+    "corsairwebsolution_client"
+  ],
+  "claims_supported": [
+    "aud",
+    "exp",
+    "iat",
+    "iss",
+    "jti",
+    "sub"
+  ],
+  "id_token_signing_alg_values_supported": [
+    "RS256"
+  ],
+  "code_challenge_methods_supported": [
+    "S256"
+  ],
+  "subject_types_supported": [
+    "public"
+  ],
+  "token_endpoint_auth_methods_supported": [
+    "client_secret_basic",
+    "client_secret_post"
+  ],
+  "claims_parameter_supported": false,
+  "request_parameter_supported": false,
+  "request_uri_parameter_supported": false
+}.
+
+[22:16:43 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The cryptography request was successfully extracted from the HTTP request: {}.
+
+[22:16:43 Information] OpenIddict.Server.Internal.OpenIddictServerHandler
+The cryptography response was successfully returned: {
+  "keys": [
+    {
+      "kid": "WAKCQYA2DTMFRYD4R7JYD1SBZ_OT2GFWG_YLSH7X",
+      "use": "sig",
+      "kty": "RSA",
+      "alg": "RS256",
+      "e": "AQAB",
+      "n": "wakCqYA2DTmFRYD4r7jyD1SbZ_oT2gFWg_ylsh7XilgDFKvTAWUDBhLhtxax7ME_6dpOFLXY6L6gp9yd4_tZ9pA3nSqogE2OohNgDik1eOkfo3FH5N_1fV0OaZFhOV4WKaWKuluK18MVMaQ_iD668Xv6OJF3elhr_A0xFVsM9Kkkat3e2qCtaQ6MmDfbNJLZhTI0anHM8ND5KJoasjI1cpt-OTC6QdKUkR4Pk3TYfTcZemT-CNKM29y03f8O2sed6XKS5yI0YeBmDvU8A0nfWz0-JJVeSbONm1DVdHcwLQae68x1A3oy0D_sZ2ttDLaBlS5Lrd_VYwtLf6lBG5WEzQ"
+    }
+  ]
+}.
+

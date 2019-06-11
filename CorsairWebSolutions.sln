@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorsairWebSolutions", "CorsairWebSolutions\CorsairWebSolutions.csproj", "{09C40FE4-78E3-4635-BAFD-5DFC6E1EF0F8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorsairWebSolutions.Service", "CorsairWebSolutions.Service\CorsairWebSolutions.Service.csproj", "{A9D25FDE-1A6B-4E6A-909C-8361604D7EF4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorsairWebsolutions.StorageService", "CorsairWebsolutions.StorageService\CorsairWebsolutions.StorageService.csproj", "{1C5D888C-AAB5-4A55-9D7F-4C55C8A9BACC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorsairWebSolutions.IdentityManagement.Test", "CorsairWebSolutions.IdentityManagement.Test\CorsairWebSolutions.IdentityManagement.Test.csproj", "{1A725919-3617-4EE4-8189-82E292BAEFE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorsairWebSolutions.IdentityServer", "CorsairWebSolutions.IdentityServer\CorsairWebSolutions.IdentityServer.csproj", "{1A82102C-427F-4C2E-8718-5B4F4A2FB87A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09C40FE4-78E3-4635-BAFD-5DFC6E1EF0F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09C40FE4-78E3-4635-BAFD-5DFC6E1EF0F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09C40FE4-78E3-4635-BAFD-5DFC6E1EF0F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09C40FE4-78E3-4635-BAFD-5DFC6E1EF0F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9D25FDE-1A6B-4E6A-909C-8361604D7EF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9D25FDE-1A6B-4E6A-909C-8361604D7EF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9D25FDE-1A6B-4E6A-909C-8361604D7EF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9D25FDE-1A6B-4E6A-909C-8361604D7EF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C5D888C-AAB5-4A55-9D7F-4C55C8A9BACC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C5D888C-AAB5-4A55-9D7F-4C55C8A9BACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C5D888C-AAB5-4A55-9D7F-4C55C8A9BACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C5D888C-AAB5-4A55-9D7F-4C55C8A9BACC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A725919-3617-4EE4-8189-82E292BAEFE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A725919-3617-4EE4-8189-82E292BAEFE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A725919-3617-4EE4-8189-82E292BAEFE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A725919-3617-4EE4-8189-82E292BAEFE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A82102C-427F-4C2E-8718-5B4F4A2FB87A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A82102C-427F-4C2E-8718-5B4F4A2FB87A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A82102C-427F-4C2E-8718-5B4F4A2FB87A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A82102C-427F-4C2E-8718-5B4F4A2FB87A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72214EE6-CF51-4ACB-BE4B-161D2122D1AF}
+	EndGlobalSection
+EndGlobal

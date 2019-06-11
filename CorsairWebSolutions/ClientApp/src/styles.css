@@ -1,0 +1,70 @@
+/* You can add global styles to this file, and also import other style files */
+
+html{
+    background-color:  white;
+}
+
+
+div{
+    background-color:  white;
+}
+
+.bg{
+  background-color: rgb(28, 138, 219);
+}
+html {
+    font-size: 1rem;
+  }
+
+  a{
+    color:rgb(65, 65, 65);
+    font-size:20px
+}
+
+
+  h1{
+    color:rgb(65, 65, 65);
+}
+
+h2{
+    color:rgb(65, 65, 65);
+    font-size: 40px;
+}
+
+h3{
+    color:rgb(65, 65, 65);
+}
+
+
+p{
+    color:rgb(65, 65, 65);
+    font-size: 20px;
+
+}
+
+hr{
+color:white
+}
+
+.metallic{
+    color:rgb(65, 65, 65);
+}
+
+  
+  @include media-breakpoint-up(sm) {
+    html {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @include media-breakpoint-up(md) {
+    html {
+        font-size: 26px;
+    }
+  }
+  
+  @include media-breakpoint-up(lg) {
+    html {
+      font-size: 26px;
+    }
+  }

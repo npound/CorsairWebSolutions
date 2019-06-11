@@ -1,0 +1,43 @@
+<div class="row">
+    <div class="col">
+      <h4 class="display-4 d-none d-md-block" style="text-align:center">Get Started</h4>
+      <h2 class="d-md-none" style="text-align:center">Get Started</h2>
+    </div>
+  </div>
+
+
+
+  
+  <div class="row" style="height:25px"></div>
+
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <p style="text-align:center">Ready to start a conversation? Contact us and together we can build a plan to implement your perfectly tailored solution.</p>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+
+  
+  <div class="row" style="height:25px"></div>
+
+<div class="row" style="height:600px">
+  <div class="col-xs-1 col-md-4"></div>
+  <div class="col-md-4">
+        <div class="form-group">
+            <label for="nameId">Name</label>
+            <input minlength="2" maxlength="64" class="form-control" id="nameId" [(ngModel)]="name" placeholder="" required>
+          </div>
+
+      <div class="form-group">
+        <label for="emailId">Email address</label>
+        <input min="7" max="256" type="email" class="form-control" id="emailId" [(ngModel)]="email" placeholder="name@example.com" required>
+      </div>
+      <div class="form-group" style="height:350px">
+        <label for="messageId">Message</label>
+        <textarea class="form-control" id="messageId"style="height:300px"  [(ngModel)]="message" rows="3" required> </textarea>
+      </div>
+      <button class="btn btn-primary" (click)="sendMessage()" >Submit</button>
+  </div>
+  <div class="col-md-4 col-xs-1"></div>
+</div>

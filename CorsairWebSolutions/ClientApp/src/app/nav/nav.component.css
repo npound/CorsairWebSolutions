@@ -1,0 +1,23 @@
+a{
+    font-size:25px;
+    color:white;
+}
+
+a:hover{
+    color:rgba(255, 255, 240, 0.445)
+}
+
+.nav-bg{
+    background-color: rgb(28, 138, 219);
+}
+
+.companyName {
+    font-family: 'Amatic SC', cursive;
+    font-size: 32px
+    }
+
+hr{
+    height: 10px;
+    margin-top: 0%
+}
+
