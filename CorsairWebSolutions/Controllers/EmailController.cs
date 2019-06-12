@@ -14,7 +14,7 @@ namespace CorsairWebSolutions.Controllers
         public async Task<IActionResult> SendEmail(ContectEmail email)
         {
 
-            var apiKey = "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";
+            var apiKey = "";
             var client = new SendGridClient(apiKey);
             var from = new EmailAddress(email.email, email.name);
             var subject = "Contact Request";
